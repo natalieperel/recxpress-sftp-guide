@@ -11,9 +11,13 @@
 </head>
 <body>
   <div id="root"></div>
-  <script type="text/babel" src="data.js"></script>
-  <script type="text/babel" src="utils.js"></script>
-  <script type="text/babel" src="components.js"></script>
-  <script type="text/babel" src="app.js"></script>
+  <!--
+    Load order matters — each file depends on the one above it.
+    Babel processes type="text/babel" scripts sequentially.
+  -->
+  <script type="text/babel" src="data.js" data-type="module"></script>
+  <script type="text/babel" src="utils.js" data-type="module"></script>
+  <script type="text/babel" src="components.js" data-type="module"></script>
+  <script type="text/babel" src="app.js" data-type="module"></script>
 </body>
 </html>
