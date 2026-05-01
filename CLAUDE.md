@@ -1,15 +1,15 @@
 # LinkedIn Automation — Instructions for Claude
 
-All marketing reference material lives in `linkedin-mcp/content/`.
+All marketing reference material lives in `/Users/rosebonica/linkedin/`.
 Read those files before drafting any post or comment.
 
 ---
 
 ## Daily post run (triggered at 09:00 UTC)
 
-1. Read `linkedin-mcp/content/brand-voice.md` — never deviate from this.
-2. Read `linkedin-mcp/content/post-calendar.md` — find today's pillar based on the day of the week.
-3. Read `linkedin-mcp/content/topics.md` — pick a specific topic from that pillar.
+1. Read `/Users/rosebonica/linkedin/brand-voice.md` — never deviate from this.
+2. Read `/Users/rosebonica/linkedin/post-calendar.md` — find today's pillar based on the day of the week.
+3. Read `/Users/rosebonica/linkedin/topics.md` — pick a specific topic from that pillar.
 4. Draft a post. Check it fits the brand voice. Max 3000 characters.
 5. Publish immediately with `create_text_post`.
    If the post naturally references a URL, use `create_article_post` instead.
@@ -20,7 +20,7 @@ Read those files before drafting any post or comment.
 ## Engagement run (triggered at 09:30 UTC and 15:00 UTC)
 
 ### Find and engage with industry content
-1. Read `linkedin-mcp/content/topics.md` for the hashtag list.
+1. Read `/Users/rosebonica/linkedin/topics.md` for the hashtag list.
 2. Pick 3 hashtags relevant to today's post pillar.
 3. For each hashtag, call `search_hashtag_posts` (count: 5).
 4. Like the top 2 posts per hashtag that are genuinely relevant.
