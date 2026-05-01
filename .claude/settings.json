@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "linkedin": {
+      "command": "python",
+      "args": ["linkedin-mcp/server.py"],
+      "env": {
+        "LINKEDIN_ACCESS_TOKEN": "REPLACE_ME",
+        "LINKEDIN_REFRESH_TOKEN": "REPLACE_ME",
+        "LINKEDIN_CLIENT_ID": "REPLACE_ME",
+        "LINKEDIN_CLIENT_SECRET": "REPLACE_ME",
+        "LINKEDIN_ORGANIZATION_ID": "REPLACE_ME"
+      }
+    }
+  }
+}
